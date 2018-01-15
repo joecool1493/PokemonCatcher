@@ -13,6 +13,10 @@
 		84992041200BF95B000EA90B /* PokemonCatcher.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8499203F200BF95B000EA90B /* PokemonCatcher.xcdatamodeld */; };
 		84992043200BF95B000EA90B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84992042200BF95B000EA90B /* Assets.xcassets */; };
 		84992046200BF95B000EA90B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84992044200BF95B000EA90B /* LaunchScreen.storyboard */; };
+		8499204F200BF9C6000EA90B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8499204E200BF9C6000EA90B /* MapKit.framework */; };
+		84992051200C073E000EA90B /* PokedexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84992050200C073E000EA90B /* PokedexViewController.swift */; };
+		84992053200C0860000EA90B /* CoreDataHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84992052200C0860000EA90B /* CoreDataHelp.swift */; };
+		84992055200CAB1A000EA90B /* PokeAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84992054200CAB1A000EA90B /* PokeAnnotation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		84992042200BF95B000EA90B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84992045200BF95B000EA90B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84992047200BF95B000EA90B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8499204E200BF9C6000EA90B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		84992050200C073E000EA90B /* PokedexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexViewController.swift; sourceTree = "<group>"; };
+		84992052200C0860000EA90B /* CoreDataHelp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelp.swift; sourceTree = "<group>"; };
+		84992054200CAB1A000EA90B /* PokeAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeAnnotation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8499204F200BF9C6000EA90B /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +51,7 @@
 			children = (
 				84992037200BF95A000EA90B /* PokemonCatcher */,
 				84992036200BF95A000EA90B /* Products */,
+				8499204D200BF9C6000EA90B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +66,26 @@
 		84992037200BF95A000EA90B /* PokemonCatcher */ = {
 			isa = PBXGroup;
 			children = (
+				8499203F200BF95B000EA90B /* PokemonCatcher.xcdatamodeld */,
+				84992054200CAB1A000EA90B /* PokeAnnotation.swift */,
 				84992038200BF95A000EA90B /* AppDelegate.swift */,
 				8499203A200BF95B000EA90B /* ViewController.swift */,
+				84992050200C073E000EA90B /* PokedexViewController.swift */,
+				84992052200C0860000EA90B /* CoreDataHelp.swift */,
 				8499203C200BF95B000EA90B /* Main.storyboard */,
 				84992042200BF95B000EA90B /* Assets.xcassets */,
 				84992044200BF95B000EA90B /* LaunchScreen.storyboard */,
 				84992047200BF95B000EA90B /* Info.plist */,
-				8499203F200BF95B000EA90B /* PokemonCatcher.xcdatamodeld */,
 			);
 			path = PokemonCatcher;
+			sourceTree = "<group>";
+		};
+		8499204D200BF9C6000EA90B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8499204E200BF9C6000EA90B /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +161,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8499203B200BF95B000EA90B /* ViewController.swift in Sources */,
+				84992055200CAB1A000EA90B /* PokeAnnotation.swift in Sources */,
+				84992051200C073E000EA90B /* PokedexViewController.swift in Sources */,
 				84992039200BF95A000EA90B /* AppDelegate.swift in Sources */,
+				84992053200C0860000EA90B /* CoreDataHelp.swift in Sources */,
 				84992041200BF95B000EA90B /* PokemonCatcher.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
