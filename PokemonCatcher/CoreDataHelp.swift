@@ -11,8 +11,18 @@ import UIKit
 import CoreData
 
 func addAllPokemon() {
-    createPokemon(name: "Mew", imageName: "mew")
-    createPokemon(name: "Meowth", imageName: "meowth")
+    createPokemon(name: "Bacon", imageName: "bacon")
+    createPokemon(name: "Beans", imageName: "beans")
+    createPokemon(name: "Green Bell Pepper", imageName: "bell-pepper")
+    createPokemon(name: "Cheeseburger", imageName: "burger")
+    createPokemon(name: "Chili Pepper", imageName: "chili")
+    createPokemon(name: "Double Cheeseburger for Ultimate Shlorp Experience", imageName: "double-burger")
+    createPokemon(name: "Garlic", imageName: "garlic")
+    createPokemon(name: "Beans", imageName: "beans")
+    createPokemon(name: "Onion", imageName: "onion")
+    createPokemon(name: "Beans", imageName: "beans")
+    createPokemon(name: "Salt and Pepper", imageName: "salt-and-pepper")
+    createPokemon(name: "Tomato", imageName: "tomato")
     
     (UIApplication.shared.delegate as! AppDelegate).saveContext()
 }

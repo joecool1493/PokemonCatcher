@@ -70,7 +70,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         if annotation is MKUserLocation {
             let annoView = MKAnnotationView(annotation: annotation, reuseIdentifier: nil)
             
-            annoView.image = UIImage(named: "player")
+            annoView.image = UIImage(named: "man")
             
             var frame = annoView.frame
             frame.size.height = 50
@@ -124,9 +124,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
                     
                     mapView.removeAnnotation(view.annotation!)
                     
-                    let alertVC = UIAlertController(title: "Congrats!", message: "You caught a \(pokemon.name!). You are a Pokemon Master!", preferredStyle: .alert)
+                    let alertVC = UIAlertController(title: "Congrats!", message: "You caught the ingredient \(pokemon.name!). You are on your way to Shlorptown, USA!", preferredStyle: .alert)
                     
-                    let pokedexAction = UIAlertAction(title: "Pokedex", style: .default, handler: { (action) in
+                    let pokedexAction = UIAlertAction(title: "Shlorpdex", style: .default, handler: { (action) in
                         self.performSegue(withIdentifier: "pokedexSegue", sender: nil)
                     })
                     alertVC.addAction(pokedexAction)
@@ -135,7 +135,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
                     self.present(alertVC, animated: true, completion: nil)
                     
                 } else {
-                    let alertVC = UIAlertController(title: "Uh oh!", message: "You are too far away to catch the \(pokemon.name!). Move closer to it!", preferredStyle: .alert)
+                    let alertVC = UIAlertController(title: "Uh oh!", message: "You are too far away to catch the ingredient \(pokemon.name!). Move closer to it!", preferredStyle: .alert)
                     let OKaction = UIAlertAction(title: "Ok", style: .default, handler: nil)
                     alertVC.addAction(OKaction)
                     self.present(alertVC, animated: true, completion: nil)

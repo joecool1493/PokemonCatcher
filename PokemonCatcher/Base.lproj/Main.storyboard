@@ -38,7 +38,7 @@
                                     <constraint firstAttribute="width" constant="50" id="J7Q-gx-2uP"/>
                                     <constraint firstAttribute="height" constant="50" id="rZH-bT-cZa"/>
                                 </constraints>
-                                <state key="normal" image="pokeball"/>
+                                <state key="normal" image="bag"/>
                                 <connections>
                                     <segue destination="zaX-iS-CWp" kind="presentation" identifier="pokedexSegue" id="D96-27-EpC"/>
                                 </connections>
@@ -83,7 +83,7 @@
                                     <constraint firstAttribute="height" constant="50" id="8WG-7A-q5I"/>
                                     <constraint firstAttribute="width" constant="50" id="bJx-4C-Dt4"/>
                                 </constraints>
-                                <state key="normal" image="map"/>
+                                <state key="normal" image="worldwide"/>
                                 <connections>
                                     <action selector="mapTapped:" destination="zaX-iS-CWp" eventType="touchUpInside" id="Os6-tt-Yzl"/>
                                 </connections>
@@ -110,8 +110,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="bag" width="32" height="32"/>
         <image name="compass" width="512" height="512"/>
-        <image name="map" width="512" height="512"/>
-        <image name="pokeball" width="512" height="512"/>
+        <image name="worldwide" width="32" height="32"/>
     </resources>
 </document>
